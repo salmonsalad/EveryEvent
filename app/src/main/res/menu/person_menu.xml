@@ -3,15 +3,10 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/userInfo"
-        android:title="유저 정보"
-        app:showAsAction="never"/>
-    <item
-        android:id="@+id/eventInterested"
-        android:title="관심 이벤트"
-        app:showAsAction="never" />
-    <item
-        android:id="@+id/logout"
-        android:title="로그아웃"
-        app:showAsAction="never" />
+        android:id="@+id/search_action"
+        android:icon="@drawable/search_icon"
+        android:title="search"
+        app:showAsAction="always">
+
+    </item>
 </menu>

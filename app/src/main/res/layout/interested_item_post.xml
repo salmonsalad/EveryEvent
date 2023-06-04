@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/eventTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="제목"
+            android:fontFamily="@font/suite_light"
+            android:textSize="20sp"></TextView>
+
+        <TextView
+            android:id="@+id/myAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/eventTitle"
+            android:paddingLeft="10dp"
+            android:text="장소"
+            android:fontFamily="@font/suite_light"
+            android:textSize="20sp"></TextView>
+
+        <TextView
+            android:id="@+id/numberOfPeople"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/myAddress"
+            android:paddingLeft="10dp"
+            android:text="0"
+            android:fontFamily="@font/suite_light"
+            android:textSize="20sp"></TextView>
+
+        <TextView
+            android:id="@+id/slash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/myAddress"
+            android:layout_toRightOf="@+id/numberOfPeople"
+            android:text=" / "
+            android:fontFamily="@font/suite_light"
+            android:textSize="20sp"></TextView>
+
+        <TextView
+            android:id="@+id/numberOfPeopleCanApply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/myAddress"
+            android:layout_toRightOf="@+id/slash"
+            android:text="0"
+            android:fontFamily="@font/suite_light"
+            android:textSize="20sp"></TextView>
+
+        <TextView
+            android:id="@+id/eventState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/myAddress"
+            android:layout_alignParentRight="true"
+            android:paddingRight="10dp"
+            android:text="남은 날짜"
+            android:fontFamily="@font/suite_light"
+            android:textSize="20sp"></TextView>
+        <View
+            android:layout_below="@+id/eventState"
+            android:layout_height="1dp"
+            android:layout_width="match_parent"
+            android:background="@color/black">
+        </View>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

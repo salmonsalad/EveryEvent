@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
         <LinearLayout
             android:id="@+id/layout_fragment"
             android:orientation="vertical"
@@ -11,46 +18,157 @@
             android:layout_height="match_parent">
         </LinearLayout>
 
+    <LinearLayout
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
         <LinearLayout
-            android:id="@+id/menu"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:orientation="horizontal">
+            android:id="@+id/introduction_button1"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
 
-            <Button
-                android:id="@+id/announcementButton"
-                android:layout_width="wrap_content"
+            <ImageButton
+                android:id="@+id/introduction_button2"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/alarm_icon"
+                android:text="공지사항"
+                android:fontFamily="@font/suite_light"/>
+
+            <TextView
+                android:id="@+id/announcementButton2"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="공지사항" />
-
-            <Button
-                android:id="@+id/recentEventButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="최근본이벤트" />
-
-            <Button
-                android:id="@+id/HomeButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="홈" />
-
-            <Button
-                android:id="@+id/eventMakingButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="이벤트 생성" />
-
-            <Button
-                android:id="@+id/QRButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="QR" />
+                android:gravity="center"
+                android:text="공지사항"
+                android:fontFamily="@font/suite_bold"/>
         </LinearLayout>
-</RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/appIntroduce"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/appIntroduce_button1"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/introduction_img"
+                android:text="앱 소개"
+                android:fontFamily="@font/suite_light"/>
+
+            <TextView
+                android:id="@+id/appIntroduce_button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="앱 소개"
+                android:fontFamily="@font/suite_bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/HomeButton1"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:padding="2dp">
+
+            <ImageButton
+                android:id="@+id/HomeButton2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/home_button_img"
+                android:text="홈"
+                android:fontFamily="@font/suite_bold"/>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="이벤트"
+                android:fontFamily="@font/suite_bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/QRcode1"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/QRcode2"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/qrcode_img"
+                android:text="커뮤니티"
+                android:fontFamily="@font/suite_light"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="QR 코드"
+                android:fontFamily="@font/suite_bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/QRButton1"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="2dp">
+
+            <ImageButton
+                android:id="@+id/QRButton2"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/suite_light"
+                android:scaleType="fitCenter"
+                android:src="@drawable/mypage_img"
+                android:text="QR" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/suite_bold"
+                android:gravity="center"
+                android:text="마이페이지" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

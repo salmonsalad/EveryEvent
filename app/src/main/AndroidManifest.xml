@@ -22,7 +22,16 @@
         android:theme="@style/Theme.EveryEvent"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".MainPage.MainActivity">
+        </activity>
+
+        <activity android:name=".MainPage.AppIntroduceActivity">
+        </activity>
+        <activity
+            android:name=".Login.LoginActivity">
+        </activity>
+        <activity
+            android:name=".Login.SignUpActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -31,26 +40,42 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".LoginActivity">
-
+            android:name=".Login.PasswordResetActivity">
         </activity>
-        <activity
-            android:name=".SignUpActivity">
-
-        </activity>
-        <activity
-            android:name=".PasswordResetActivity">
-        </activity>
-        <activity android:name=".MemberInitActivity">
+        <activity android:name=".Login.MemberInitActivity">
 
 
         </activity>
         <activity android:name="BasicActivity">
 
         </activity>
-        <activity android:name="WritePostActivity">
+        <activity android:name=".MainPage.WritePostActivity">
 
         </activity>
+        <activity android:name=".ShowPostList.ShowPostActivity">
+
+        </activity>
+        <activity android:name=".EventInterestedView">
+
+        </activity>
+        <activity android:name=".ApplyedEventView">
+
+        </activity>
+        <activity android:name=".ManageGeneratedEvents">
+
+        </activity>
+        <activity android:name=".RecentEventList.RecentEventsView">
+
+        </activity>
+        <activity android:name=".UserInfoView">
+
+        </activity>
+
+        <activity android:name=".MainPage.WritePostPopUp" android:theme="@android:style/Theme.Dialog">
+
+        </activity>
+        <activity android:name=".MainPage.SearchEvents"></activity>
+        <activity android:name=".MemberInfoUpdateActivity"></activity>
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="com.example.everyevent.fileprovider"

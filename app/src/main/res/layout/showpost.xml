@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="이벤트이름"
+                android:fontFamily="@font/suite_bold"/>
+
+            <TextView
+                android:id="@+id/eventname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="이름"
+                android:fontFamily="@font/suite_bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop = "20dp"
+                android:layout_weight="1"
+                android:text="이벤트 내용"
+                android:fontFamily="@font/suite_bold"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/eventcontent"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="5dp"
+                android:layout_weight="5"
+                android:text="컨텐츠"
+                android:fontFamily="@font/suite_bold"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/showEventImage"
+            android:layout_width="match_parent"
+            android:layout_height="305dp"
+            android:layout_weight="1"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:paddingLeft="10dp"
+                android:text="이벤트 장소"
+                android:fontFamily="@font/suite_bold"/>
+
+            <TextView
+                android:id="@+id/eventplace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="장소"
+                android:fontFamily="@font/suite_medium"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:text="이벤트 상태"
+                android:fontFamily="@font/suite_bold"/>
+
+            <TextView
+                android:id="@+id/eventstate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="준비중"
+                android:fontFamily="@font/suite_medium"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:text="시작 날짜"
+                android:fontFamily="@font/suite_bold"/>
+
+            <TextView
+                android:id="@+id/eventstartdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="날짜"
+                android:fontFamily="@font/suite_medium"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/eventcomepeople"
+                android:layout_width="231dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:text="신청한 인원/수용 가능 인원"
+                android:fontFamily="@font/suite_bold"/>
+
+            <TextView
+                android:id="@+id/numberofeventapplicants"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/suite_medium"
+                android:text="0" />
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="21dp"
+                android:gravity="center"
+                android:text="/"
+                android:fontFamily="@font/suite_medium"/>
+
+            <TextView
+                android:id="@+id/eventallpeople"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:fontFamily="@font/suite_medium"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <android.widget.Button
+                android:id="@+id/postbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="신청"
+                android:background="@drawable/edit_button_drawble"
+                android:padding="10dp"
+                android:fontFamily="@font/suite_bold"
+                android:textColor="#000000" />
+
+            <android.widget.Button
+                android:id="@+id/interestedEventBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="관심 이벤트 등록"
+                android:background="@drawable/edit_button_drawble"
+                android:padding="10dp"
+                android:fontFamily="@font/suite_bold"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

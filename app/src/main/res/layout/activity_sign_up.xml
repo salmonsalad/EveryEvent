@@ -11,6 +11,7 @@
         android:layout_height="200dp"
         android:gravity="center"
         android:text="회원가입"
+        android:fontFamily="@font/suite_bold"
         android:textColor="#000000"
         android:textSize="24sp"
         android:textStyle="bold" />
@@ -27,6 +28,9 @@
             android:layout_margin="5dp"
             android:ems="10"
             android:hint="이메일"
+            android:background="@drawable/edit_text_drawble"
+            android:padding="10dp"
+            android:fontFamily="@font/suite_light"
             android:inputType="textEmailAddress"
             android:textSize="19dp" />
 
@@ -37,6 +41,9 @@
             android:layout_margin="5dp"
             android:ems="10"
             android:hint="비밀번호"
+            android:background="@drawable/edit_text_drawble"
+            android:padding="10dp"
+            android:fontFamily="@font/suite_light"
             android:inputType="textPassword"
             android:textSize="19dp" />
 
@@ -44,23 +51,35 @@
             android:id="@+id/passwordCheckEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
+            android:layout_margin="5dp"
             android:ems="10"
             android:hint="비밀번호 확인"
+            android:background="@drawable/edit_text_drawble"
+            android:padding="10dp"
+            android:fontFamily="@font/suite_light"
             android:inputType="textPassword"
             android:textSize="19dp" />
 
-        <Button
-            android:id="@+id/checkButton"
+        <android.widget.Button
+            android:id="@+id/updateButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="회원가입" />
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="5dp"
+            android:text="회원가입"
+            android:background="@drawable/edit_button_drawble"
+            android:fontFamily="@font/suite_bold"
+            android:textColor="#000000" />
 
-        <Button
+        <android.widget.Button
             android:id="@+id/gotoLoginButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="로그인" />
+            android:layout_margin="5dp"
+            android:text="로그인"
+            android:background="@drawable/edit_button_drawble"
+            android:fontFamily="@font/suite_bold"
+            android:textColor="#000000" />
     </LinearLayout>
 
 </LinearLayout>

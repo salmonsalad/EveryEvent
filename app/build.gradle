@@ -68,4 +68,10 @@ dependencies {
     implementation 'com.journeyapps:zxing-android-embedded:4.3.0'
     //아래로 당겨서 새로고침
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
+    // FirebaseUI Storage only
+    implementation 'com.firebaseui:firebase-ui-storage:7.2.0'
+    implementation 'androidx.viewpager2:viewpager2:1.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
+
+
 }

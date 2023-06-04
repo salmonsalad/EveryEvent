@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="center"
+        android:text="어플리케이션 소개"
+        android:fontFamily="@font/suite_bold"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/introduceText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/suite_light"
+            android:text="Every Event는 쉽고 간편한 이벤트 등록, 참여, 관리를 위한 서비스입니다. 최초 가입시 입력한 정보에 따라 추천 이벤트를 확인하고 다양한 행사에 참여하실 수 있으며, 직접 이벤트를 기획하여 관리자에게 요청하는 것이 가능합니다. \n\n 관심 카테고리 변경은 마이페이지 > 내 정보 수정에서 가능하며, 기타 프로필 수정 및 관심 설정한 이벤트 다시 보기 또한 마이페이지에서 접근 가능합니다. \n\n 오류 문의 010-0000-0000.  "
+            android:textSize="19dp" />
+
+        </LinearLayout>
+
+
+</LinearLayout>
